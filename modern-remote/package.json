@@ -1,0 +1,34 @@
+{
+    "name": "remote-button",
+    "version": "1.0.0",
+    "description": "Remote React 19 button with Module Federation",
+    "main": "src/index.js",
+    "author": "Your Name",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "webpack serve --mode development",
+        "build": "webpack --mode production",
+        "serve": "serve dist -p 3001"
+    },
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.24.0",
+        "@babel/preset-env": "^7.24.0",
+        "@babel/preset-react": "^7.24.0",
+        "babel-loader": "^9.1.3",
+        "css-loader": "^6.10.0",
+        "html-webpack-plugin": "^5.6.0",
+        "style-loader": "^3.3.4",
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1",
+        "serve": "^14.2.1"
+    },
+    "resolutions": {
+        "webpack": "^5.90.3"
+    }
+}

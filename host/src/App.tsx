@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import { useRemoteBootstrap } from "./hooks/useRemoteBootstrap";
 
 const EPUTS_MODULE_CONTAINER_ID = "eputs-module-container";
+
+const RemoteButton = lazy(() => import("remote_app/Button"));
 
 const App = () => {
     useRemoteBootstrap(
@@ -14,6 +16,7 @@ const App = () => {
     return (
         <div style={{ padding: "20px" }}>
             <h1>Host Application (React 19)</h1>
+            <RemoteButton></RemoteButton>
             <div id={EPUTS_MODULE_CONTAINER_ID}></div>
         </div>
     );

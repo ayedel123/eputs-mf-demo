@@ -74,6 +74,9 @@ module.exports = {
         }),
         new ModuleFederationPlugin({
             name: "host",
+            remotes: {
+                remote_app: "remote_app@http://localhost:3001/remoteEntry.js",
+            },
             shared: {
                 react: {
                     singleton: true,
