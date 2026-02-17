@@ -1,0 +1,27 @@
+.forbiddenContainer {
+  position: absolute;
+  height: calc(100vh - 72px);
+  width: 100vw;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusCode {
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.subTitle {
+  font-size: 28px;
+  font-weight: 400;
+}
