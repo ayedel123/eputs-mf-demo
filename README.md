@@ -6,6 +6,7 @@
 
 - **host** — основное приложение на React 19
 - **dtp-map-module** — подключаемый модуль на React 17 (изначально single-spa)
+- **modern-remote** — подключаемый модуль на React 19
 
 ## Особенности
 
@@ -25,6 +26,16 @@
 # Node.js 20.11.1
 npm install
 npm run start:mf
+```
+
+### Modern-remote
+
+Важно, использует `yarn` 
+
+```bash
+# Node.js 22.18.0
+yarn install
+yarn start
 ```
 
 ### Host
